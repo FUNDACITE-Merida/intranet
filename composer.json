@@ -1,0 +1,43 @@
+{
+    "name": "FUNDACITE-Merida/yii2-intranet",
+    "description": "Sistema para el manejo de una Intranet en la pequeña y mediana empresa (PYME)",
+    "keywords": ["yii2", "intranet", "pyme", "software", "gestión"],
+    "homepage": "https://github.com/FUNDACITE-Merida",
+    "type": "project",
+    "license": "GPL2",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "dev",
+    "authors": [
+       {
+           "name": "Leonardo Javier Alviarez Hernández",
+           "email": "alviarez.leonardo@gmail.com",
+           "role": "Developer"
+       },
+   ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.6",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
