@@ -1,54 +1,44 @@
-Yii 2 Advanced Project Template
-===============================
+Suite de Intranet
+=================
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Suite de Intranet es un sistema básico que permite la integración de distintos módulos (aplicaciones) para las tareas comunes de una pequeña o mediana empresa.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+> **Importante: El sistema está en desarrollo y no es posible usarlo en producción sin el riesgo de incendiar la empresa, la ciudad y/o el país ;-).**
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+Suite de Intranet provee la funcionalidad base y común para las aplicaciones que se acoplarán a ella. Las funcionalidades son las siguientes:
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+- Autenticación, autorización y administración de usuarios.
+- Manejo de dependencias organizacionales.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
 
-DIRECTORY STRUCTURE
--------------------
+Instalación
+-----------
+<!--- ### Instalación vía composer
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-tests                    contains various tests for the advanced application
-    codeception/         contains tests developed with Codeception PHP Testing Framework
-```
+La forma preferida de instalar Suite de Intranet es vía [composer](http://getcomposer.org/download/).
+
+Use los siguientes comandos:
+
+...
+php composer.phar create-project FUNDACITE-Merida/yii2-intranet suite-intranet
+...
+--->
+
+Clone el repositorio:
+...
+git clone https://github.com/FUNDACITE-Merida/yii2-intranet.git suite-intranet
+...
+
+Ingrese al directorio creado y ejecute:
+...
+php composer.phar install
+...
+
+Configuración
+-------------
+
+1.- Cree una base de datos y configure los parámetros en common/config/main-local.php
+2.- Por línea de comandos ejecute desde el directorio de la aplicación:
+    ...
+    ./yii migrate
+    ...
